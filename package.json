@@ -1,0 +1,26 @@
+{
+  "name": "dataplane-workbench",
+  "version": "1.0.0",
+  "description": "DataPlane - Agentic Data Migration Planner & Reconciliation Workbench",
+  "main": "server/dist/index.js",
+  "scripts": {
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install",
+    "dev": "concurrently -k -n \"SERVER,CLIENT\" -c \"cyan,magenta\" \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "build": "npm run build --prefix client && npm run build --prefix server",
+    "start": "node server/dist/index.js",
+    "test": "npm run test --prefix server"
+  },
+  "keywords": [
+    "data-migration",
+    "agentic-ai",
+    "reconciliation",
+    "schema-mapping",
+    "dry-run",
+    "idempotency"
+  ],
+  "author": "DataPlane Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
