@@ -121,11 +121,6 @@ npm start
 ```
 The server serves the compiled React application directly on port `3001` (or `$PORT` on cloud platforms).
 
-### 1-Click Deploy to Render / Railway / Fly.io:
-- **Build Command:** `npm run install:all && npm run build`
-- **Start Command:** `npm start`
-- **Environment Variables:** `NODE_ENV=production`
-
 ---
 
 ## 🧪 Test Suite Coverage
